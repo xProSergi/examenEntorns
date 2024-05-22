@@ -12,7 +12,13 @@ class Persona {
     private String codigoPostal;
     private String telefono;
     private int edad;
-//Prueba
+
+/** 
+ * @param dni
+ * @return boolean
+ */
+
+ 
     public boolean setDni(String dni) {
         if (dni.matches("\\d{8}")) {
             this.dni = dni;
@@ -23,6 +29,11 @@ class Persona {
         }
     }
 
+    
+    /** 
+     * @param correo
+     * @return boolean
+     */
     public boolean setCorreo(String correo) {
         String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
         Pattern pattern = Pattern.compile(regex);
