@@ -12,7 +12,7 @@ class Persona {
     private String codigoPostal;
     private String telefono;
     private int edad;
-
+//Prueba
     public boolean setDni(String dni) {
         if (dni.matches("\\d{8}")) {
             this.dni = dni;
